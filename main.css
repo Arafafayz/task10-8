@@ -1,0 +1,402 @@
+:root {
+    --yello-color: rgba(231, 136, 11, 0.993);
+    --blue-color: rgba(16, 97, 172, 0.945);
+    --bluvolt-color: rgba(126, 26, 118, 0.788);
+    --red-color: rgba(173, 26, 21, 0.836);
+    --green-color: rgb(51, 173, 21);
+}
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin: 0;
+}
+.main-container{
+    background-color: #eee;
+    display: flex;
+}
+@media(max-width:768px){
+    .main-container{
+        flex-direction: column;
+    }
+}
+.container{
+        background-color: #eee;
+}
+
+@media(max-width:768px) {
+    .container nav, 
+    .footer,
+    .container .menu{
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+.container nav span{
+    margin-bottom: 10px;
+}
+
+}
+
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+}
+nav .main{
+    right: 100%;
+}
+nav .main span{
+      display: flex;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    top: 2px;
+   position: relative;
+  }
+  nav .main span.one{
+    background-color: var(--red-color);
+  }
+   nav .main span.two {
+    background-color: var(--bluvolt-color);
+   }
+   nav .main span.three {
+         background-color: var(--blue-color);
+      }
+            nav .main span.four {
+       background-color: var(--red-color);
+    }
+    /* *************************** */
+         nav .icon span.one {
+             background-color: var(--red-color);
+         }
+    
+         nav .icon span.two {
+             background-color: var(--bluvolt-color);
+         }
+    
+         nav .icon span.three {
+             background-color: var(--green-color);
+         }
+    
+         nav .icon span.four {
+             background-color: var(--yello-color);
+         }
+        nav .icon span.five {
+      background-color: var(--blue-color);
+      
+      }
+
+nav .icon {
+    position: relative;
+  top: 5px;
+color: white;
+}
+nav .icon span:hover,
+nav .main span:hover{
+   opacity: 80%;
+   
+   cursor: pointer;
+}
+/* ************************* */
+.container .menu{
+display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+.container .menu span{
+    background-color: var(--green-color);
+     margin: 10px;
+     border-radius: 6px;
+     font-size: 20px;
+    padding: 5px;
+    background-color: rgb(171, 111, 228);
+    flex-wrap: wrap;
+    display: flex;
+        justify-content: end;
+        align-items: center;
+        display: inline-block;
+        color: white;
+    }
+    /* ***********product************* */
+ .main-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px 10px;
+   
+ }
+ .product{
+    cursor: pointer;
+    background-color: #eee;
+ }
+ .product .head{
+    width: 150px;
+    background-color: var(--blue-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .product .head .price{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 2px 5px 5px 5px ;
+        color: white;
+        
+ }
+ .product .head .offer{
+    display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        color: rgb(233, 233, 110);
+ }
+
+
+ .product img{
+   
+        width: 150px;
+           
+           
+            text-align: center;
+            margin: 0 auto;
+ }
+ .product .about{
+    width: 150px;
+    background-color:var(--bluvolt-color) ;
+    text-align: center;
+    color: white;
+ }
+ /* ******footer********** */
+ .footer{
+display: flex;
+margin-top: 50px;
+ }
+ .footer .last-salles{
+   
+    font-size: 25px;
+background-color: var(--blue-color);
+ }
+ .footer .print{
+ 
+          font-size: 25px;
+    background-color: var(--red-color);
+ }
+ .footer .print span,
+ .footer .last-salles span{
+    color: white;
+font-weight: bold;
+ position: relative;
+ top: 3px;
+ }
+
+
+/* ***********************about-clint***************** */
+.about-clint{
+   
+     background-color: #eee;
+     border-radius: 6px;
+}
+.about-clint .form1{
+    display: flex;
+   
+    direction: rtl;
+justify-content: right;
+
+}
+.about-clint .info-sale{
+border-radius: 10px;
+background-color: white;
+height: 95%;
+margin-bottom: 10px;
+}
+ .about-clint .info-sale .form2,
+  .about-clint .info-sale .form3,
+  .about-clint .info-sale .form4,
+  .about-clint .info-sale .form5,
+  .about-clint .info-sale .form6,
+   .about-clint .info-sale .form{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: 30px;
+     }
+ .about-clint .info-sale .form6{
+   position: relative;
+   top: 6px;
+   margin-left: -6px;
+            }
+                   .about-clint .info-sale .form6 span {
+                    top: 6px;
+                        position: relative;
+                        margin-left: -6px;
+            }
+.about-clint span{
+    font-weight: bold;
+    border: 1px solid #999;
+    }
+.about-clint input{
+    direction: rtl;  
+}
+.about-clint .info-sale .f23 {
+        display: flex;
+            justify-content: end;   
+ }
+ .about-clint .info-sale .f45{
+    display: flex;
+        justify-content: end;
+        align-items: center;
+ }
+ @media(max-width:768px) {
+     .about-clint .f23, 
+     .about-clint .f45, 
+     .about-clint .form6 {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+ .about-clint .info-sale .products-bar{
+    margin-top: 30PX;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: #222;
+    color: #eee;
+    flex-direction: row;
+    direction: rtl;
+ }
+ .about-clint .info-sale .products-bar span.one{
+flex-basis: 25%;
+justify-content: center;
+    display: flex;
+ }
+  .about-clint .info-sale .products-bar span.tow {
+flex-basis: 25%;
+justify-content: center;
+    display: flex;
+  }
+   .about-clint .info-sale .products-bar span.three {
+flex-basis: 50%;
+margin-right: 5px;
+   }
+   /* ****************footerclint**************** */
+
+
+   .footer-clint .one{
+display: flex;
+    justify-content: end;
+    margin-top: 99%;
+    
+ }
+  .footer-clint .one .one-footer,
+  .footer-clint .one .two-footer{
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+ .footer-clint .last-footer{
+    
+        color: rgb(32, 15, 15);
+                display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+     }
+         .footer-clint .last-footer span{
+            border: none;
+            font-size: 12px;
+         }
+         .footer-clint .last-footer div+span
+         {
+            display: flex;
+             align-items: center;
+            font-size: 10px;
+         }
+
+         /* **************** */
+                 .nav-end span{
+                    border: none;
+                    font-size: 12px;
+                    
+                 }
+
+        .nav-end {
+            margin-top: 25px;
+        border: none;
+            font-size: 12px;
+                border: none;
+                    background-color: #eee;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 6px;
+     }
+         .nav-end .one{
+            background-color: var(--blue-color);
+            border-radius: 6px;
+         }
+                   .nav-end .two {
+                       background-color: var(--green-color);
+                       
+                   }
+  .nav-end .three {
+      background-color: var(--blue-color);
+  }
+  .nav-end .four {
+      background-color: var(--red-color);
+  }
+        .nav-end .five {
+            background-color: var(--yello-color);
+        }
+                  .nav-end .six {
+                      background-color: var(--green-color);
+                  }
+                                         .nav-end .seven {
+                                             background-color: var(--red-color);
+                                         }
+          .nav-end .eight {
+              background-color: var(--blue-color);
+          }
+                        .nav-end .nine {
+                            background-color: var(--bluvolt-color);
+                        }
+                   @media(max-width:768px) {
+        
+                       .last-footer,
+                       .nav-end {
+                           /* flex-wrap: wrap; */
+                           flex-direction: column;
+                           font-weight: 50px;
+                           margin-bottom: 15px;
+                       }
+                         .last-footer div,
+                          .nav-end div {
+                            margin-bottom: 15px;
+                            padding: 10px;
+                            border-radius: 6px;
+                            width: 50%;
+                            direction: rtl;
+                            text-align: center;
+                          }
+                   }
+
+
+
+
+
+
+
+
